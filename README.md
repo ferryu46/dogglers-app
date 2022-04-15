@@ -11,7 +11,7 @@ DogglersApp menggunakan RecyclerView dalam tampilan vertikal, horizontal, dan gr
 
 ## Bagaimana Cara Mengerjakan Tugas DogglersApp?
 --------------
-Tugas Mandiri Proyek Dogglers app sudah dibekali dengan kode, yang harus dilakukan kemudian adalah melengkapi bagian kode serta desain tampilan dengan panduan pada daftar TODO. Langkah-langkah yang dilakukan dapat diuraikan sebagai berikut:
+Tugas Mandiri Proyek Dogglers app sudah dibekali dengan kode, yang harus dilakukan kemudian adalah melengkapi bagian kode serta desain tampilan dengan panduan pada daftar "TODO". Langkah-langkah yang dilakukan dapat diuraikan sebagai berikut:
 
 ## Bagian Desain Tampilan
 
