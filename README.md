@@ -15,11 +15,7 @@ Tugas Mandiri Proyek Dogglers app sudah dibekali dengan kode, yang harus dilakuk
 
 ## Bagian Desain Tampilan
 
-Pada bagian desain, kita perlu membuat desain xml untuk tampilan horizontal atau vertikal serta tampilan grid.
-
-Untuk RecyclerView horizontal/vertikal, kita bisa menggunakan MaterialCardView dengan ConstraintLayout di dalamnya untuk memberikan informasi tentang si anjing, yaitu nama, umur, dan hobinya.
-
-Demikian pula halnya dengan tata letak grid.
+Pada bagian desain, kita perlu membuat desain xml untuk tampilan horizontal atau vertikal serta tampilan grid. Untuk RecyclerView horizontal/vertikal, kita bisa menggunakan MaterialCardView dengan ConstraintLayout di dalamnya untuk memberikan informasi tentang si anjing, yaitu nama, umur, dan hobinya. Demikian pula halnya dengan tata letak grid.
 
 ### Bagian Koding
 
