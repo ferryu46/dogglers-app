@@ -1,27 +1,72 @@
-Dogglers - Starter Code
+# Selamat Datang di DogglersApp!
 ==================================
 
-Starter code for the second independent project for [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course).
+Aplikasi ini merupakan proyek mandiri kedua yang diberikan dalam [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course).
 
-Introduction
+
+# Apa yang ada di DogglersApp?
 ------------
+DogglersApp menggunakan RecyclerView dalam tampilan vertikal, horizontal, dan grid untuk menampilkan sekelompok tampilan dalam bentuk CardViews yang terdiri atas gambar, nama, umur, dan hobi.
 
-This is the starter code for the Dogglers app project in the [final pathway](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-2-pathway-3) of Android Basics [Unit 2](https://developer.android.com/courses/android-basics-kotlin/unit-2). This project is an opportunity for you to demonstrate the concepts you learned in the unit.
 
-Pre-requisites
+## Bagaimana Cara Mengerjakan Tugas DogglersApp?
 --------------
+Tugas Mandiri Proyek Dogglers app sudah dibekali dengan kode, yang harus dilakukan kemudian adalah melengkapi bagian kode serta desain tampilan dengan panduan pada daftar TODO. Langkah-langkah yang dilakukan dapat diuraikan sebagai berikut:
 
-- Complete [Unit 2](https://developer.android.com/courses/android-basics-kotlin/unit-2) of Android Basics in Kotlin
+## Bagian Desain Tampilan
 
-Getting Started
----------------
+Pada bagian desain, kita perlu membuat desain xml untuk tampilan horizontal atau vertikal serta tampilan grid.
 
-1. Download the starter code
-2. Open the project in Android Studio
-3. Complete the project in accordance with the [project instructions](https://developer.android.com/codelabs/basic-android-kotlin-training-project-dogglers-app?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-kotlin-unit-2-pathway-3%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-training-project-dogglers-app#0)
+Untuk RecyclerView horizontal/vertikal, kita bisa menggunakan MaterialCardView dengan ConstraintLayout di dalamnya untuk memberikan informasi tentang si anjing, yaitu nama, umur, dan hobinya.
 
-Tips
-----
+Demikian pula halnya dengan tata letak grid.
 
-- Use the provided tests to ensure your app is running as expected
-- DO NOT ALTER THE PROVIDED TESTS
+### Bagian Koding
+
+Pada bagian koding, kita harus menerapkan adapter untuk menampilkan gambar, nama, umur, dan hobi anjing pada desain frontend yang telah kita buat pada bagian sebelumnya.
+
+Pertama, kita deklarasikan sebuah variabel yang memuat daftar (list) informasi tentang anjing.
+
+![Imgur](https://i.imgur.com/8eELkFr.png)
+
+Lalu, kita buat kelas DogCardViewHolder yang merupakan extend dari RecyclerView.ViewHolder.
+
+Pada kelas itu kita definisikan tampilan yang berbeda untuk item yang kita perlu modifikasi, yaitu: gambar anjing serta teks dari nama, umur dan hobi.
+
+![Imgur](https://i.imgur.com/dCYBl9r.png)
+
+Kemudian, kita terapkan method onCreateViewHolder dari kelas DogCardViewHolder yang inherit dari parent class RecyclerView.ViewHolder.
+
+Untuk yang mengalami kendala dengan skenario ini, misalnya, tata letak (layout) mana yang harus di inflate (Vertikal/Horizontal atau Grid) ? Kita bisa menggunakan ekspresi when yang memeriksa apakah variabel layout dari DogCardAdapter bernilai "Layout.Grid" atau bernilai lain seperti "Layout.Vertical" atau "Layout.Horizontal".
+
+![Imgur](https://i.imgur.com/CiKmmgp.png)
+
+Selanjutnya, kita bisa implementasikan metode getItemCount().
+
+![Imgur](https://i.imgur.com/mkyYD5Z.png)
+
+Langkah terakhir, kita terapkan metode onBindViewHolder() yang mengatur nilai yang berbeda sesuai dengan antarmuka yang ada pada ViewHolder.
+
+Ambil posisi terkini tampilan si anjing yang ada dalam variabel dogData, lalu atur gambar,  nama, umur, dan hobinya. Perlu diingat untuk selalu menggunakan ".?" (safe call operator untuk null-safety).
+
+![Imgur](https://i.imgur.com/nG7HR4X.png)
+
+
+## Tampilan Akhir Project
+
+- Tampilan Halaman Peluncuran (Launcher app):
+
+![Imgur](https://i.imgur.com/b2apNk9.png)
+
+- Tampilan Vertikal:
+
+![Imgur](https://i.imgur.com/Ol31Ty4.png)
+
+- Tampilan Horizontal:
+
+![Imgur](https://i.imgur.com/o4w6PII.png)
+
+- Tampilan Grid:
+
+![Imgur](https://i.imgur.com/wbsM0xm.png)
+
